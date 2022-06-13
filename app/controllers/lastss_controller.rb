@@ -1,0 +1,2 @@
+class LastssController < ApplicationController
+end

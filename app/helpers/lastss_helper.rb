@@ -1,0 +1,2 @@
+module LastssHelper
+end

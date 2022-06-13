@@ -1,0 +1,28 @@
+<h1>Welcome to Mobile shopping app</h1>
+
+<% if current_user %>
+<%= link_to 'Sign_out',destroy_usser_session_path,method: :delete %>
+<% else %>
+<%= link_to 'Sign_up', sign_up_path %>
+<br>
+<br>
+<%= link_to 'Sign_in', sign_in_path %>
+
+
+<% end %>
+
+<br>
+<br>
+<%= link_to 'Available Items',items_path %>
+
+<br>
+<h2>Visitor's Count </h2>
+<%= $redis.scard('uniquevisitors') %>
+
+
+
+
+
+
+
+

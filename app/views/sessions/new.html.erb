@@ -1,0 +1,29 @@
+<h2>Sign in </h2>
+
+<%=  form_with model: @usser ,url: sign_in_path do |form| %>
+    <div class ="emaill">
+     <%= form.label :email %>
+     <%= form.text_field :email %>
+     </div>
+     <div class ="emaill">
+     <%= form.label :password %>
+       <%= form.password_field :password %>
+     </div>
+     
+     
+    
+
+    <div class ="emaill"> 
+    <br>
+
+     <%= form.submit "Sign_in" %>
+     
+    </div>
+    
+
+
+<% end %>
+<br>
+
+
+

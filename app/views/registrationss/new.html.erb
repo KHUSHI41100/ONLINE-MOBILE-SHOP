@@ -1,0 +1,38 @@
+
+<h1>Welcome to Mobile shopping app</h1><h2>Sign up </h2>
+<br>
+
+<%=  form_with model: @usser ,url: sign_up_path do |form| %>
+    
+
+    <div class ="emaill">
+     <%= form.label :email %>
+     <%= form.text_field :email %>
+     </div>
+     <div class ="emaill">
+     <%= form.label :password %>
+       <%= form.password_field :password %>
+     </div>
+     <div class ="emaill">
+     <%= form.label :password_confirmation %>
+     
+    <%= form.password_field :password_confirmation %>
+    </div>
+
+    <div class ="emaill"> 
+    <br>
+
+     <%= form.submit "Sign_up" %>
+     
+    </div>
+    
+
+
+<% end %>
+<br>
+
+
+   
+
+
+
