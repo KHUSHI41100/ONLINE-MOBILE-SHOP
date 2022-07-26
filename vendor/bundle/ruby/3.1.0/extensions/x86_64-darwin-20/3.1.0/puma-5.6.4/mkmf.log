@@ -1,8 +1,8 @@
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib pkg-config --exists openssl
-package configuration for openssl is not found
-have_library: checking for BIO_read() in -lcrypto... -------------------- yes
-
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lruby.3.1   "
+PKG_CONFIG_PATH = /Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib PKG_CONFIG_PATH=/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig pkg-config --exists openssl
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib PKG_CONFIG_PATH=/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig {"PKG_CONFIG_PATH"=>"/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig"} pkg-config --libs openssl |
+=> "-L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -lssl -lcrypto\n"
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib     -lruby.3.1   "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -13,101 +13,32 @@ checked program was:
 6: }
 /* end */
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lruby.3.1 -lcrypto   "
-conftest.c:14:57: error: use of undeclared identifier 'BIO_read'
-int t(void) { void ((*volatile p)()); p = (void ((*)()))BIO_read; return !p; }
-                                                        ^
-1 error generated.
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib     -lruby.3.1 -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -lssl -lcrypto  "
 checked program was:
 /* begin */
- 1: #include "ruby.h"
- 2: 
- 3: /*top*/
- 4: extern int t(void);
- 5: int main(int argc, char **argv)
- 6: {
- 7:   if (argc > 1000000) {
- 8:     int (* volatile tp)(void)=(int (*)(void))&t;
- 9:     printf("%d", (*tp)());
-10:   }
-11: 
-12:   return !!argv[argc];
-13: }
-14: int t(void) { void ((*volatile p)()); p = (void ((*)()))BIO_read; return !p; }
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
 /* end */
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib     -lruby.3.1 -lcrypto   "
-checked program was:
-/* begin */
- 1: #include "ruby.h"
- 2: 
- 3: /*top*/
- 4: extern int t(void);
- 5: int main(int argc, char **argv)
- 6: {
- 7:   if (argc > 1000000) {
- 8:     int (* volatile tp)(void)=(int (*)(void))&t;
- 9:     printf("%d", (*tp)());
-10:   }
-11: 
-12:   return !!argv[argc];
-13: }
-14: extern void BIO_read();
-15: int t(void) { BIO_read(); return 0; }
-/* end */
-
---------------------
-
-have_library: checking for SSL_CTX_new() in -lssl... -------------------- yes
-
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lcrypto  -lruby.3.1 -lssl -lcrypto   "
-conftest.c:14:57: error: use of undeclared identifier 'SSL_CTX_new'
-int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_CTX_new; return !p; }
-                                                        ^
-1 error generated.
-checked program was:
-/* begin */
- 1: #include "ruby.h"
- 2: 
- 3: /*top*/
- 4: extern int t(void);
- 5: int main(int argc, char **argv)
- 6: {
- 7:   if (argc > 1000000) {
- 8:     int (* volatile tp)(void)=(int (*)(void))&t;
- 9:     printf("%d", (*tp)());
-10:   }
-11: 
-12:   return !!argv[argc];
-13: }
-14: int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_CTX_new; return !p; }
-/* end */
-
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lcrypto  -lruby.3.1 -lssl -lcrypto   "
-checked program was:
-/* begin */
- 1: #include "ruby.h"
- 2: 
- 3: /*top*/
- 4: extern int t(void);
- 5: int main(int argc, char **argv)
- 6: {
- 7:   if (argc > 1000000) {
- 8:     int (* volatile tp)(void)=(int (*)(void))&t;
- 9:     printf("%d", (*tp)());
-10:   }
-11: 
-12:   return !!argv[argc];
-13: }
-14: extern void SSL_CTX_new();
-15: int t(void) { SSL_CTX_new(); return 0; }
-/* end */
-
---------------------
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib PKG_CONFIG_PATH=/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig {"PKG_CONFIG_PATH"=>"/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig"} pkg-config --cflags-only-I openssl |
+=> "-I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include\n"
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib PKG_CONFIG_PATH=/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig {"PKG_CONFIG_PATH"=>"/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig"} pkg-config --cflags-only-other openssl |
+=> "\n"
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib PKG_CONFIG_PATH=/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig {"PKG_CONFIG_PATH"=>"/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib/pkgconfig"} pkg-config --libs-only-l openssl |
+=> "-lssl -lcrypto\n"
+package configuration for openssl
+incflags: -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include
+cflags: 
+ldflags: -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib
+libs: -lssl -lcrypto
 
 have_header: checking for openssl/bio.h... -------------------- yes
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe   -c conftest.c"
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe    -c conftest.c"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -119,7 +50,7 @@ checked program was:
 
 have_func: checking for DTLS_method() in openssl/ssl.h... -------------------- yes
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -144,7 +75,7 @@ checked program was:
 
 have_func: checking for TLS_server_method() in openssl/ssl.h... -------------------- yes
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -169,7 +100,7 @@ checked program was:
 
 have_func: checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... -------------------- yes
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -195,7 +126,7 @@ checked program was:
 
 have_func: checking for X509_STORE_up_ref()... -------------------- yes
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 conftest.c:14:57: error: use of undeclared identifier 'X509_STORE_up_ref'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))X509_STORE_up_ref; return !p; }
                                                         ^
@@ -218,7 +149,7 @@ checked program was:
 14: int t(void) { void ((*volatile p)()); p = (void ((*)()))X509_STORE_up_ref; return !p; }
 /* end */
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -242,7 +173,7 @@ checked program was:
 
 have_func: checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... -------------------- yes
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -268,7 +199,7 @@ checked program was:
 
 have_func: checking for SSL_get1_peer_certificate() in openssl/ssl.h... -------------------- no
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 conftest.c:16:57: error: use of undeclared identifier 'SSL_get1_peer_certificate'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_get1_peer_certificate; return !p; }
                                                         ^
@@ -293,10 +224,10 @@ checked program was:
 16: int t(void) { void ((*volatile p)()); p = (void ((*)()))SSL_get1_peer_certificate; return !p; }
 /* end */
 
-DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib "gcc -o conftest -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rvm/rubies/ruby-3.1.2/include/ruby-3.1.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -I/usr/local/opt/libyaml/include -I/usr/local/opt/libksba/include -I/usr/local/opt/readline/include -I/usr/local/opt/zlib/include -I/usr/local/opt/openssl@1.1/include -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef -fno-common -pipe conftest.c  -L. -L/Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib -L. -L/usr/local/opt/libyaml/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/zlib/lib -L/usr/local/opt/openssl@1.1/lib -fstack-protector-strong -L/usr/local/lib    -lssl -lcrypto  -lruby.3.1 -lssl -lcrypto   "
+DYLD_FALLBACK_LIBRARY_PATH=.:/Users/kbhansali/.rbenv/versions/3.1.2/lib "clang -o conftest -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/x86_64-darwin20 -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0/ruby/backward -I/Users/kbhansali/.rbenv/versions/3.1.2/include/ruby-3.1.0 -I. -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/openssl/include -I/Users/kbhansali/.rbenv/versions/3.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -fdeclspec -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wdivision-by-zero -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wshorten-64-to-32 -Wwrite-strings -Wold-style-definition -Wmissing-noreturn -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wunused-variable -Wextra-tokens -Wundef  -fno-common -pipe  conftest.c  -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib -L. -L/Users/kbhansali/.rbenv/versions/3.1.2/lib  -fstack-protector-strong -L/usr/local/lib -L/Users/kbhansali/.rbenv/versions/3.1.2/openssl/lib     -lssl -lcrypto -lruby.3.1  -lssl -lcrypto  "
 Undefined symbols for architecture x86_64:
   "_SSL_get1_peer_certificate", referenced from:
-      _t in conftest-28e592.o
+      _t in conftest-64298f.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:

@@ -19,6 +19,7 @@ class RegistrationssController < ApplicationController
             
            session[:usser_id] = @usser.id
            
+           
            redirect_to  shops_path ,notice: "successfully signedup"
         else
             
@@ -32,7 +33,7 @@ class RegistrationssController < ApplicationController
             flash[:notice] = "login again"
         end
 
-
+        render json:@usser
 
     end
 

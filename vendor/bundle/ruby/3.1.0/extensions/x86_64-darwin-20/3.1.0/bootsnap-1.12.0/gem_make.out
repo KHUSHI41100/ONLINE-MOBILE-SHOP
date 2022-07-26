@@ -1,15 +1,15 @@
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
-/Users/kbhansali/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220607-24903-we5lps.rb extconf.rb
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+/Users/kbhansali/.rbenv/versions/3.1.2/bin/ruby -I /Users/kbhansali/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
 creating Makefile
 
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
-make DESTDIR\= clean
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-okpq8m sitelibdir\=./.gem.20220725-52717-okpq8m clean
 
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
-make DESTDIR\=
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-okpq8m sitelibdir\=./.gem.20220725-52717-okpq8m
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
-make DESTDIR\= install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20220607-24903-lkcg51/bootsnap
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-okpq8m sitelibdir\=./.gem.20220725-52717-okpq8m install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20220725-52717-okpq8m/bootsnap

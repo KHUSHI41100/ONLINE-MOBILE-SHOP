@@ -1,0 +1,16 @@
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+/Users/kbhansali/.rbenv/versions/3.1.2/bin/ruby -I /Users/kbhansali/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-qz2kun sitelibdir\=./.gem.20220725-52717-qz2kun clean
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-qz2kun sitelibdir\=./.gem.20220725-52717-qz2kun
+compiling strscan.c
+linking shared-object strscan.bundle
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-qz2kun sitelibdir\=./.gem.20220725-52717-qz2kun install
+/usr/local/bin/ginstall -c -m 0755 strscan.bundle ./.gem.20220725-52717-qz2kun

@@ -2,10 +2,13 @@ class ShopsController < ApplicationController
   def index
     @products=Product.all
     @order_item = current_order.order_items.new
+   
+    render json: @products
   end
 
   def show
     @product=Product.find(params[:id])
+    render json: @product
   end
   def destroy
     @product.destroy

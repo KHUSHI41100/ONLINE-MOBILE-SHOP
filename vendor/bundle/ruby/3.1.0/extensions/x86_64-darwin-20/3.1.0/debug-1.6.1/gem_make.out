@@ -1,0 +1,16 @@
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+/Users/kbhansali/.rbenv/versions/3.1.2/bin/ruby -I /Users/kbhansali/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-utyeja sitelibdir\=./.gem.20220725-52717-utyeja clean
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-utyeja sitelibdir\=./.gem.20220725-52717-utyeja
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/debug-1.6.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-utyeja sitelibdir\=./.gem.20220725-52717-utyeja install
+/usr/local/bin/ginstall -c -m 0755 debug.bundle ./.gem.20220725-52717-utyeja/debug

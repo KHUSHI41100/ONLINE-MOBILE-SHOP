@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   get 'items/index'
   get 'items/show'
   get 'ends/home'
+  get 'cards/show'
+  get 'shops/show'
+
    
+
   devise_for :users
   get "sign_up" , to: "registrationss#new"
   post "sign_up" , to: "registrationss#create"

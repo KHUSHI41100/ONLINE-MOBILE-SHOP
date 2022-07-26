@@ -1,15 +1,15 @@
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-/Users/kbhansali/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/kbhansali/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220607-24903-nnrnes.rb extconf.rb
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/kbhansali/.rbenv/versions/3.1.2/bin/ruby -I /Users/kbhansali/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
 creating Makefile
 
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\= clean
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-nxy0lj sitelibdir\=./.gem.20220725-52717-nxy0lj clean
 
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\=
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-nxy0lj sitelibdir\=./.gem.20220725-52717-nxy0lj
 compiling websocket_mask.c
 linking shared-object websocket_mask.bundle
 
-current directory: /Users/kbhansali/onlinemobileshopp/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\= install
-/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20220607-24903-s4166d
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-nxy0lj sitelibdir\=./.gem.20220725-52717-nxy0lj install
+/usr/local/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20220725-52717-nxy0lj

@@ -6,15 +6,18 @@ class ProductsController < ApplicationController
   # GET /products or /products.json
   def index
     @products = Product.all
+    render json: { products: @products }
   end
 
   # GET /products/1 or /products/1.json
   def show
+    render json: { product: Product.find(params[:id]) }
   end
 
   # GET /products/new
   def new
     @product = Product.new
+    render json: @product
   end
 
   # GET /products/1/edit

@@ -1,0 +1,30 @@
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.3/ext/msgpack
+/Users/kbhansali/.rbenv/versions/3.1.2/bin/ruby -I /Users/kbhansali/.rbenv/versions/3.1.2/lib/ruby/site_ruby/3.1.0 extconf.rb
+checking for ruby/st.h... yes
+checking for st.h... no
+checking for rb_enc_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... no
+creating Makefile
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.3/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-o4x5xu sitelibdir\=./.gem.20220725-52717-o4x5xu clean
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.3/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-o4x5xu sitelibdir\=./.gem.20220725-52717-o4x5xu
+compiling buffer.c
+compiling buffer_class.c
+compiling extension_value_class.c
+compiling factory_class.c
+compiling packer.c
+compiling packer_class.c
+compiling packer_ext_registry.c
+compiling rbinit.c
+compiling rmem.c
+compiling unpacker.c
+compiling unpacker_class.c
+compiling unpacker_ext_registry.c
+linking shared-object msgpack/msgpack.bundle
+
+current directory: /Users/kbhansali/dupliswithadmin/vendor/bundle/ruby/3.1.0/gems/msgpack-1.5.3/ext/msgpack
+make DESTDIR\= sitearchdir\=./.gem.20220725-52717-o4x5xu sitelibdir\=./.gem.20220725-52717-o4x5xu install
+/usr/local/bin/ginstall -c -m 0755 msgpack.bundle ./.gem.20220725-52717-o4x5xu/msgpack
